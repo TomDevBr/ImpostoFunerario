@@ -10,43 +10,49 @@ export function SectionRequisitos({ className, ...props }: SectionRequisitosProp
     <section
       id="requisitos"
       data-slot="section-requisitos"
-      className={twMerge('w-full bg-[--color-darkgreen] py-24 text-white', className)}
+      className={twMerge('flex flex-col w-full bg-darkgreen py-24 text-white gap-24 px-4 sm:px-0', className)}
       {...props}
     >
-      <div className="mx-auto max-w-[838px] px-6">
+      <div className="mx-auto w-full max-w-[1390px] flex flex-col gap-12">
         <SectionTitle>Requisitos da guild</SectionTitle>
 
-        <div className="mt-12 space-y-4 text-[24px] font-[var(--font-alegreya-sans)]">
-          <p>
-            O uso do Discord é obrigatório sempre que estiver online.
-          </p>
-          <p>
-            Respeite todos os membros da guilda.
-          </p>
-          <p>
-            Siga as orientações do caller durante qualquer conteúdo.
-          </p>
-          <p>
-            Em caso de conflito, resolvam a situação em call separada dos demais jogadores.
-          </p>
-          <p>
-            Caso não seja possível chegar a um acordo, um @STAFF irá mediar o conflito e aplicar as medidas necessárias, conforme o ocorrido.
-          </p>
-          <p>
-            Proibidas brigas ou discussões nos chats /g ou /a.
-          </p>
-          <p>
-            Bom senso e respeito acima de tudo.
-          </p>
-          <p>
-            Em caso de período de ausência, informe no canal ⁠aviso-ausência.
-          </p>
+        <div className="mt-12 flex flex-col gap-8 sm:flex-row justify-between">
+          <div className=' flex flex-col'>
+            <h3 className="text-[24px] font-[var(--font-alegreya-sc)] text-yellow">Requisitos</h3>
+            <ul className="mt-4 space-y-2 text-[24px] font-[var(--font-alegreya-sc)]">
+              <li>50m de fama total</li>
+              <li>Discord ON</li>
+            </ul>
+          </div>
+          <div className=' flex flex-col'>
+            <h3 className="text-[24px] font-[var(--font-alegreya-sc)] text-yellow">Oferecemos</h3>
+            <ul className="mt-4 space-y-2 text-[24px] font-[var(--font-alegreya-sc)]">
+              <li>H.0 na avalon + 5 baús verdes</li>
+              <li>Suporte para os novatos</li>
+              <li>Ambiente sem pessoas tóxicas</li>
+              <li>Sem conteúdo obrigatório</li>
+            </ul>
+          </div>
+          <div className=' flex flex-col'>
+            <h3 className="text-[24px] font-[var(--font-alegreya-sc)] text-yellow">Conteúdos diversos</h3>
+            <ul className="mt-4 space-y-2 text-[24px] font-[var(--font-alegreya-sc)]">
+              <li>Gank</li>
+              <li>Baú Azul e Dourado</li>
+              <li>Dg de Grupo</li>
+              <li>Fixa</li>
+              <li>Coleta em grupo</li>
+              <li>Roads</li>
+            </ul>
+          </div>
         </div>
 
         <div id="discord" className="mt-16">
-          <CtaDiscord />
+          <CtaDiscord className="justify-center" />
         </div>
       </div>
+        
+
+
     </section>
   )
 }

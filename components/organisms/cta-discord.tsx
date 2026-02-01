@@ -8,7 +8,8 @@ export function CtaDiscord({ className, ...props }: CtaDiscordProps) {
   return (
     <div data-slot="cta-discord" className={twMerge('flex w-full justify-center', className)} {...props}>
       <a
-        href="#discord"
+        href="https://discord.gg/Bj8XXcNHCV"
+        target="_blank"
         aria-label="Abrir Discord"
         className={twMerge(buttonVariants({ variant: 'primary', size: 'lg' }), 'h-40 w-[400px] rounded-[90px] text-[64px] flex items-center justify-center')}
       >

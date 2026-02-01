@@ -6,15 +6,15 @@ export interface SectionTitleProps extends ComponentProps<'h2'> {}
 
 export function SectionTitle({ className, children, ...props }: SectionTitleProps) {
   return (
-    <div data-slot="section-title" className={twMerge('flex w-full flex-col items-center', className)}>
-      <Separator className="max-w-[354px]" />
+    <div data-slot="section-title" className={twMerge('flex w-full flex-col items-center justify-between ', className)}>
+      <Separator className="w-full sm:max-w-[354px]" />
       <h2
-        className={twMerge('text-[64px] leading-[0.375em] font-normal text-[--color-yellow] font-[var(--font-alegreya-sc)]', className)}
+        className={twMerge(' text-[44px] sm:text-[64px]  text-yellow font-(--font-alegreya-sc)', className)}
         {...props}
       >
         {children}
       </h2>
-      <Separator className="max-w-[354px]" />
+      <Separator className="w-full sm:max-w-[354px]" />
     </div>
   )
 }

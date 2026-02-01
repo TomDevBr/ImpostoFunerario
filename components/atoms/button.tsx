@@ -10,7 +10,7 @@ export const buttonVariants = tv({
   ],
   variants: {
     variant: {
-      primary: 'border-[--color-yellow] bg-[--color-yellow] text-black hover:bg-[#e2a526]',
+      primary: 'border-yellow bg-yellow text-black hover:bg-[#e2a526]',
       secondary: 'border-border bg-secondary text-secondary-foreground hover:bg-muted',
       ghost: 'border-transparent bg-transparent text-muted-foreground hover:text-foreground',
       destructive: 'border-destructive bg-destructive text-destructive-foreground hover:bg-destructive/90',

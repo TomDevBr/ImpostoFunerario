@@ -20,7 +20,9 @@ export default function RootLayout({
       <body
         className={`${alegreyaSc.variable} ${alegreyaSans.variable} antialiased`}
       >
-        {children}
+        <div data-slot="content-wrapper" className="mx-auto w-full max-w-[1600px]">
+          {children}
+        </div>
       </body>
     </html>
   );
